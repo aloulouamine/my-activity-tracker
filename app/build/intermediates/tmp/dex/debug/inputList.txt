@@ -1,0 +1,5 @@
+/home/amine/Bureau/android_studio_projects/app/build/intermediates/classes/debug
+/home/amine/Bureau/android_studio_projects/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-ef23256983ee5cd96a78e6286e3c6c01835f1cad.jar
+/home/amine/Bureau/android_studio_projects/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-15dea477b85a5fd077aeecd8e8fa32554465e506.jar
+/home/amine/Bureau/android_studio_projects/app/build/intermediates/pre-dexed/debug/classes-67829d992b88d3f950a2d3d49a5ed83f5bf319be.jar
+/home/amine/Bureau/android_studio_projects/app/build/intermediates/pre-dexed/debug/classes-6e06a446d1e816b3fd2b240e723da1b767bf396f.jar

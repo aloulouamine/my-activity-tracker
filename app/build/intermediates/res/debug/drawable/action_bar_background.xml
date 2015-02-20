@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/m_action_bar_color"/>
+
+
+</shape><!-- From: file:/home/amine/Bureau/android_studio_projects/app/src/main/res/drawable/action_bar_background.xml -->
