@@ -5,25 +5,8 @@
     android:background="@android:color/holo_green_light">
 
     <TextView
-        android:id="@+id/title"
+        android:text="@string/hello_world"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="@string/hello_world" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/title"
-        android:layout_toRightOf="@+id/button"
-        android:text="@string/hello_world" />
-
-    <Button
-        android:id="@id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/title"
-        android:text="@string/hello_world" />
-
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>

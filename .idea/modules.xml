@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/android_studio_projects.iml" filepath="$PROJECT_DIR$/android_studio_projects.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-activity-tracker.iml" filepath="$PROJECT_DIR$/my-activity-tracker.iml" />
     </modules>
   </component>
 </project>

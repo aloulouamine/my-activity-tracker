@@ -1,5 +1,6 @@
 package com.iit.myactivtytracker;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -18,7 +19,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.v("slim","MainActivity. onCreate called");
+        Log.v("slim", "MainActivity. onCreate called");
         setContentView(R.layout.activity_main);
 
         getSupportActionBar().setBackgroundDrawable(getResources().getDrawable(R.drawable.action_bar_background));
@@ -29,33 +30,33 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
-    protected void onStart(){
+    protected void onStart() {
         super.onStart();
-        Log.v("slim","MainActivity. onStart called");
+        Log.v("slim", "MainActivity. onStart called");
     }
 
-    protected void onPause(){
+    protected void onPause() {
         super.onPause();
-        Log.v("slim","MainActivity. onPause called");
+        Log.v("slim", "MainActivity. onPause called");
     }
 
-    protected void onStop(){
+    protected void onStop() {
         super.onStop();
-        Log.v("slim","MainActivity. onStop called");
+        Log.v("slim", "MainActivity. onStop called");
     }
 
-    protected void onResume(){
+    protected void onResume() {
         super.onResume();
-        Log.v("slim","MainActivity. onResume called");
+        Log.v("slim", "MainActivity. onResume called");
     }
 
 
-    protected void onDestroy(){
+    protected void onDestroy() {
         super.onDestroy();
-        Log.v("slim","MainActivity. onDestroy called");
+        Log.v("slim", "MainActivity. onDestroy called");
     }
 
-   @Override
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -71,9 +72,13 @@ public class MainActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container, new SettingsFragment())
-                    .commit();
+//            Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
+//            startActivity(intent);
+            Log.v("slim","click settings activity");
+            return false;
+        } else if (id == R.id.action_share) {
+            Intent intent = new Intent("Intent.slim");
+            startActivity(intent);
             return true;
         }
 
