@@ -1,25 +1,37 @@
-package com.iit.myactivtytracker;
+package com.iit.myactivitytracker;
 
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBar;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.os.Build;
 
-import com.iit.myactivtytracker.R;
+import com.iit.myactivitytracker.ui.AddDialog;
 
-public class MainActivity2 extends ActionBarActivity {
+
+public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_activity2);
+        setContentView(R.layout.activity_main);
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.container, new MainFragment())
+                    .commit();
+        }
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main_activity2, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
@@ -33,8 +45,15 @@ public class MainActivity2 extends ActionBarActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }else if (id == R.id.action_add) {
+
+            AddDialog addDialog = new AddDialog();
+            addDialog.show(getSupportFragmentManager(),"");
+
+            return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
+
 }

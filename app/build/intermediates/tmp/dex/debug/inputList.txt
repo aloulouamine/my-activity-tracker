@@ -1,5 +1,7 @@
 /Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/classes/debug
 /Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-7e1f9066a4b5181d3ec7c60614937c8ca8f8862f.jar
+/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/pre-dexed/debug/classes-29b7ed2fc760ab1e71d30af5d548931e87fd4d81.jar
 /Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-8c38efef6b205a8ab64460258cb42b311e0ca088.jar
+/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/pre-dexed/debug/classes-587ab0a9ae4a91795582445e1fae4557568eb3fe.jar
 /Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/pre-dexed/debug/classes-440909d35be0ab924d7a0d625ce31ec24a56c646.jar
 /Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/pre-dexed/debug/classes-a65365e361d418c73cc609bf46dfc57a1d6942d4.jar

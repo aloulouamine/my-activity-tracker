@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <string name="title_activity_main_activity2">MainActivity2</string>
-
-    <string name="activity_2_text">mon texte de l activité 2</string>
-
-</resources>
