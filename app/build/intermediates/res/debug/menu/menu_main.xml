@@ -3,15 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
     <item
+        android:id="@+id/action_add"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/action_add"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+    <item
         android:id="@+id/action_settings"
         android:title="@string/action_settings"
         android:orderInCategory="100"
         app:showAsAction="never" />
-
-    <item
-        android:id="@+id/action_share"
-        android:title="share"
-        android:orderInCategory="100"
-        app:showAsAction="always" />
 </menu>
 <!-- From: file:/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/src/main/res/menu/menu_main.xml -->

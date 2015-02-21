@@ -2,11 +2,25 @@
 <items version="2" >
 
     <item
+        jar="/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/pre-dexed/debug/classes-29b7ed2fc760ab1e71d30af5d548931e87fd4d81.jar" />
+    </item>
+    <item
         jar="/Users/slouma/Documents/Slim/Projets/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
         <dex dex="/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-7e1f9066a4b5181d3ec7c60614937c8ca8f8862f.jar" />
+    </item>
+    <item
+        jar="/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/pre-dexed/debug/classes-587ab0a9ae4a91795582445e1fae4557568eb3fe.jar" />
     </item>
     <item
         jar="/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
