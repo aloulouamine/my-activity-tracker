@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="add_dialog_title">Ajouter un événement </string>
+    <string name="add_dialog_edit_text_hint">Nom de l\'événement</string>
+</resources>

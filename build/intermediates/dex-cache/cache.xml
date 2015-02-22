@@ -2,46 +2,46 @@
 <items version="2" >
 
     <item
-        jar="/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
-        <dex dex="/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/pre-dexed/debug/classes-29b7ed2fc760ab1e71d30af5d548931e87fd4d81.jar" />
-    </item>
-    <item
-        jar="/Users/slouma/Documents/Slim/Projets/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jar="/home/amine/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-7e1f9066a4b5181d3ec7c60614937c8ca8f8862f.jar" />
+        <dex dex="/home/amine/Bureau/Android APP/project/my-activity-tracker/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-ef23256983ee5cd96a78e6286e3c6c01835f1cad.jar" />
     </item>
     <item
-        jar="/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
+        jar="/home/amine/Bureau/Android APP/project/my-activity-tracker/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
-        <dex dex="/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/pre-dexed/debug/classes-587ab0a9ae4a91795582445e1fae4557568eb3fe.jar" />
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="/home/amine/Bureau/Android APP/project/my-activity-tracker/app/build/intermediates/pre-dexed/debug/classes-fcfffb88bf30794ff170bf478b23c97897b22adc.jar" />
     </item>
     <item
-        jar="/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/pre-dexed/debug/classes-a65365e361d418c73cc609bf46dfc57a1d6942d4.jar" />
-    </item>
-    <item
-        jar="/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-8c38efef6b205a8ab64460258cb42b311e0ca088.jar" />
-    </item>
-    <item
-        jar="/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jar="/home/amine/Bureau/Android APP/project/my-activity-tracker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/pre-dexed/debug/classes-440909d35be0ab924d7a0d625ce31ec24a56c646.jar" />
+        <dex dex="/home/amine/Bureau/Android APP/project/my-activity-tracker/app/build/intermediates/pre-dexed/debug/classes-dd8e96b343d1feba36488908d7fd3ea543e2d4b9.jar" />
+    </item>
+    <item
+        jar="/home/amine/Bureau/Android APP/project/my-activity-tracker/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/home/amine/Bureau/Android APP/project/my-activity-tracker/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-6c8887a1c77a31221e2d37b337146fb01450595c.jar" />
+    </item>
+    <item
+        jar="/home/amine/Bureau/Android APP/project/my-activity-tracker/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="/home/amine/Bureau/Android APP/project/my-activity-tracker/app/build/intermediates/pre-dexed/debug/classes-2d9310eb532f966cc2a9776f42699375e0df4462.jar" />
+    </item>
+    <item
+        jar="/home/amine/Bureau/Android APP/project/my-activity-tracker/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/home/amine/Bureau/Android APP/project/my-activity-tracker/app/build/intermediates/pre-dexed/debug/classes-a4e2ba85c5c843db59a534b2f83502dc06877ddc.jar" />
     </item>
 
 </items>
