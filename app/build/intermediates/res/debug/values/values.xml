@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="add_dialog_spinner_items">
+       <item>To do</item>
+       <item>In progress</item>
+       <item>Done</item>
+   </string-array>
     <!-- From: file:/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
@@ -177,6 +184,8 @@
     <eat-comment/>
     <string name="action_add">Add</string>
     <string name="action_settings">Settings</string>
+    <string name="add_dialog_edit_text_hint">Event name</string>
+    <string name="add_dialog_title">Add an event</string>
     <string name="app_name">My Activity Tracker</string>
     <string name="hello_world">Hello world!</string>
     <!-- From: file:/Users/slouma/Documents/Slim/Projets/android_studio_projects/my-activity-tracker/app/src/main/res/values/styles.xml -->

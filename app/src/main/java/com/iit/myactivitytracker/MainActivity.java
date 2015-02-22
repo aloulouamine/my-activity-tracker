@@ -45,12 +45,6 @@ public class MainActivity extends ActionBarActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
-        }else if (id == R.id.action_add) {
-
-            AddDialog addDialog = new AddDialog();
-            addDialog.show(getSupportFragmentManager(),"");
-
-            return true;
         }
 
         return super.onOptionsItemSelected(item);
