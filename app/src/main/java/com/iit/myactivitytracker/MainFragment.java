@@ -28,7 +28,7 @@ import java.util.ArrayList;
 /**
  * Created by slouma on 21/02/2015.
  */
-public class MainFragment extends Fragment implements AddDialog.OnAddListener, LoaderManager.LoaderCallbacks {
+public class MainFragment extends Fragment implements AddDialog.OnAddListener, LoaderManager.LoaderCallbacks<Cursor> {
 
 
     private static final String LIST_CONTENT_KEY = "list_content_key";
@@ -39,7 +39,6 @@ public class MainFragment extends Fragment implements AddDialog.OnAddListener, L
     private ArrayList<ListItemWrapper> mObjectList;
     private android.support.v4.app.LoaderManager mLoaderManager;
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -47,10 +46,12 @@ public class MainFragment extends Fragment implements AddDialog.OnAddListener, L
         RecyclerView recyclerView = (RecyclerView) rootView.findViewById(R.id.recycler_view);
 
 
+        mLoaderManager = getLoaderManager();
+
         if (savedInstanceState == null) {
-            mObjectList = new ArrayList<ListItemWrapper>();
-            mLoaderManager = getLoaderManager();
             mLoaderManager.initLoader(RECORD_TABLE_ID, null, this);
+            mObjectList = new ArrayList<ListItemWrapper>();
+
         } else {
             mObjectList = (ArrayList<ListItemWrapper>) savedInstanceState.getSerializable(LIST_CONTENT_KEY);
         }
@@ -90,7 +91,6 @@ public class MainFragment extends Fragment implements AddDialog.OnAddListener, L
 
             AddDialog addDialog = AddDialog.newInstance(this);
             addDialog.show(getActivity().getSupportFragmentManager(), "");
-
             return true;
         }
 
@@ -114,22 +114,28 @@ public class MainFragment extends Fragment implements AddDialog.OnAddListener, L
     @Override
     public Loader onCreateLoader(int id, Bundle args) {
 
-        Uri baseUri = TrackerContentProvider.RECORDS_CONTENT_URI;
-
-        return new CursorLoader(getActivity(), baseUri,
+        return new CursorLoader(getActivity().getApplicationContext(), TrackerContentProvider.RECORDS_CONTENT_URI,
                 RecordsTable.PROJECTION_ALL, null, null, null);
     }
 
     @Override
-    public void onLoadFinished(Loader loader, Object data) {
+    public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
+        Log.v("slim", "onLoadFinished called");
         if (loader.getId() == RECORD_TABLE_ID) {
-            Cursor cursor = (Cursor) data;
-            cursor.moveToFirst();
-            while (!cursor.isAfterLast()) {
-                mObjectList.add(createListItem(cursor));
-                cursor.moveToNext();
+            Log.v("slim", "onLoadFinished: RecordTable");
+
+            if (data.moveToFirst()) {
+                while (!data.isAfterLast()) {
+                    mObjectList.add(createListItem(data));
+                    if (!data.isClosed()) {
+                        data.moveToNext();
+                    }
+                }
+
+                mAdapter.notifyDataSetChanged();
             }
-            mAdapter.notifyDataSetChanged();
+            data.close();
+            mLoaderManager.destroyLoader(RECORD_TABLE_ID);
         }
 
 
@@ -137,12 +143,11 @@ public class MainFragment extends Fragment implements AddDialog.OnAddListener, L
 
     @Override
     public void onLoaderReset(Loader loader) {
-
+//do nothing
     }
 
 
     private ListItemWrapper createListItem(Cursor data) {
-
 
         ListItemWrapper listItemWrapper = new ListItemWrapper();
         listItemWrapper.setTitle(data.getString(data.getColumnIndex(RecordsTable.LABEL)));
@@ -151,7 +156,6 @@ public class MainFragment extends Fragment implements AddDialog.OnAddListener, L
 
 
         listItemWrapper.setState(data.getString(data.getColumnIndex(RecordsTable.STATE)));
-        mLoaderManager.destroyLoader(RECORD_TABLE_ID);
         return listItemWrapper;
     }
 }
